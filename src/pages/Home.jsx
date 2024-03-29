@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Button, Col, Container, Row } from "reactstrap";
-import HroImg from "asset/imgs/hero.svg";
+import HroImg from "asset/imgs/hero.png";
 import Services from "components/Services";
 import GetQuote from "components/GetQuote";
 import Projects from "components/Projects";
