@@ -9,21 +9,36 @@ export default function AboutUs() {
           <img
             className="w-100 px-5"
             data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
             src={AboutUsImg}
             alt=""
           />
         </Col>
         <Col md="6">
           <div className="pe-5">
-            <h2 className="fs-1 fw-bold" data-aos="fade-in-down">
+            <h2
+              className="fs-1 fw-bold"
+              data-aos="fade-in-down"
+              data-aos-anchor-placement="top-center"
+            >
               About <span className="text-primary">Us</span>
             </h2>
-            <p className="text-muted" data-aos="fade-in" data-aos-delay="300">
+            <p
+              className="text-muted"
+              data-aos="fade-in"
+              data-aos-delay="300"
+              data-aos-anchor-placement="top-center"
+            >
               Leading digital agency with solid design and development
               expertise. We build readymade websites, mobile applications, and
               elaborate online business services.
             </p>
-            <p className="text-muted" data-aos="fade-in" data-aos-delay="600">
+            <p
+              className="text-muted"
+              data-aos="fade-in"
+              data-aos-delay="600"
+              data-aos-anchor-placement="top-center"
+            >
               Leading digital agency with solid design and development
               expertise. We build readymade websites, mobile applications, and
               elaborate online business services.

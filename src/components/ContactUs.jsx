@@ -12,13 +12,18 @@ import contactShape2 from "asset/imgs/contactImg2.png";
 export default function ContactUs() {
   return (
     <div className="my-5 py-5">
-      <h2 className="fs-1 fw-bold text-center" data-aos="fade-up">
+      <h2
+        className="fs-1 fw-bold text-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         Have a project in mind! <br />
         <span className="text-primary">Drop us</span> a line.
       </h2>
       <p
         className="text-muted text-center w-75 mb-5 mx-auto"
         data-aos="fade-in"
+        data-aos-anchor-placement="top-center"
       >
         Got a project? Drop us a line if you want to work together on something
         exciting. Or do you need our help? Feel free to contact us.
@@ -38,6 +43,7 @@ export default function ContactUs() {
                   alt=""
                   data-aos="fade-right"
                   data-aos-delay="200"
+                  data-aos-anchor-placement="top-center"
                 />
                 <div>
                   <div className="text-muted fs-6">Email us</div>
@@ -57,6 +63,7 @@ export default function ContactUs() {
                   alt=""
                   data-aos="fade-right"
                   data-aos-delay="200"
+                  data-aos-anchor-placement="top-center"
                 />
                 <div>
                   <div className="text-muted fs-6 fw-light">Phone Number</div>
@@ -76,7 +83,9 @@ export default function ContactUs() {
                   alt=""
                   data-aos="fade-right"
                   data-aos-delay="200"
+                  data-aos-anchor-placement="top-center"
                 />
+
                 <div>
                   <div className="text-muted fs-6 fw-light">
                     901 N Pitt Str., Suite 170
@@ -97,6 +106,7 @@ export default function ContactUs() {
                 className="d-flex align-items-center gap-2 fw-light mt-5"
                 data-aos="fade-right"
                 data-aos-delay="200"
+                data-aos-anchor-placement="top-center"
               >
                 <div className="prev"></div>
                 <div className="fs-6 ">Connect with us:</div>
@@ -109,6 +119,7 @@ export default function ContactUs() {
                   href="https://www.instagram.com/xyzdevteam"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos-anchor-placement="top-center"
                 >
                   <img className="w-100" src={facebook} alt="" />
                 </a>
@@ -119,11 +130,17 @@ export default function ContactUs() {
                   href="https://www.instagram.com/xyzdevteam"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos-anchor-placement="top-center"
                 >
                   <img className="w-100" src={insta} alt="" />
                 </a>
 
-                <div className="img" data-aos="fade-up" data-aos-delay="400">
+                <div
+                  className="img"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-anchor-placement="top-center"
+                >
                   <img className="w-100" src={linkedin} alt="" />
                 </div>
               </div>
@@ -180,6 +197,7 @@ export default function ContactUs() {
           src={contactShape2}
           alt=""
           data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
           data-aos-delay="500"
         />
         <img
@@ -188,6 +206,7 @@ export default function ContactUs() {
           alt=""
           data-aos="zoom-in"
           data-aos-delay="500"
+          data-aos-anchor-placement="top-center"
         />
       </div>
     </div>

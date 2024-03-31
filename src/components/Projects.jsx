@@ -53,7 +53,11 @@ function Projects() {
   ];
   return (
     <div className="my-5 py-5 position-relative">
-      <h3 className="text-center fs-1 fw-bold mx-auto mt-5" data-aos="fade-up">
+      <h3
+        className="text-center fs-1 fw-bold mx-auto mt-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         Some of our selected <br />
         <span className="text-primary">projects</span>
       </h3>
@@ -65,6 +69,7 @@ function Projects() {
                 <div
                   className="ServiceImg"
                   data-aos="flip-up"
+                  data-aos-anchor-placement="top-center"
                   data-aos-delay={index * 100}
                 >
                   <div
@@ -94,6 +99,7 @@ function Projects() {
           color="primary"
           className="my-5 text-white"
           data-aos="zoom-in-down"
+          data-aos-anchor-placement="top-center"
         >
           View all portfolio{" "}
           <svg
@@ -124,6 +130,7 @@ function Projects() {
         className="circleServices"
         data-aos="fade-right"
         data-aos-delay="400"
+        data-aos-anchor-placement="top-center"
       ></div>
       <div className="circleServices2"></div>
     </div>
