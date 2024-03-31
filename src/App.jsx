@@ -9,6 +9,7 @@ import { useSnackbar } from "notistack";
 import { HttpResponseInterceptor } from "./interceptor/http-response.interceptor";
 import { Routes, Route, Outlet, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+
 // pages
 import Layout from "./layout/Layout";
 

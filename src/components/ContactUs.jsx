@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Input, div, Label, Row, Button } from "reactstrap";
 import Email from "asset/imgs/icons/email.svg";
 import phone from "asset/imgs/icons/phone.svg";
@@ -10,7 +10,13 @@ import linkedin from "asset/imgs/icons/linkedin.svg";
 import contactShape1 from "asset/imgs/contactImg.png";
 import contactShape2 from "asset/imgs/contactImg2.png";
 import { Element } from "react-scroll";
+import Splitting from "splitting";
 export default function ContactUs() {
+  const myRef = useRef();
+
+  useEffect(() => {
+    Splitting({ target: myRef.current });
+  }, []);
   return (
     <Element name="contactUs" className="my-5 py-5">
       <h2
@@ -18,8 +24,10 @@ export default function ContactUs() {
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
-        Have a project in mind! <br />
-        <span className="text-primary">Drop us</span> a line.
+        <div ref={myRef} data-splitting="words">
+          Have a project in mind! <br />
+          <span className="text-primary">Drop us</span> a line.
+        </div>
       </h2>
       <p
         className="text-muted text-center w-75 mb-5 mx-auto"

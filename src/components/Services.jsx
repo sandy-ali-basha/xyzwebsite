@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Row } from "reactstrap";
 import { Element } from "react-scroll";
 import ServicesImg from "asset/imgs/servicesImg.png";
@@ -6,8 +6,15 @@ import squares from "asset/imgs/icons/squares.svg";
 import penIcon from "asset/imgs/icons/pin.svg";
 import globe from "asset/imgs/icons/globe.svg";
 import CircleBtn from "./CircleBtn";
+import Splitting from "splitting";
 
 function Services() {
+  const myRef = useRef();
+
+  useEffect(() => {
+    Splitting({ target: myRef.current });
+  }, []);
+
   return (
     <Element className="px-5" name="services">
       <Row className="align-items-center py-5 ">
@@ -24,15 +31,14 @@ function Services() {
             data-aos="fade-in"
             data-aos-anchor-placement="top-center"
           >
-            Our Services designed to <span className="text-primary">grow</span>
-            your business.
+            <div ref={myRef} data-splitting="words">
+              Our Services designed to{" "}
+              <span className="text-primary">grow</span>
+              your business.
+            </div>
           </h2>
         </Col>
-        <Col
-          className="text-muted"
-          data-aos="in-left"
-          data-aos-anchor-placement="top-center"
-        >
+        <Col className="text-muted" data-aos="fade-left">
           Our team is skilled in delivering custom solutions that ensure optimal
           user experience and functionality.
         </Col>

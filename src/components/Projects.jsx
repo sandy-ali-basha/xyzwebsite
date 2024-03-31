@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Button, Col, Row } from "reactstrap";
 import projectImg1 from "asset/imgs/services/service (1).png";
 import projectImg2 from "asset/imgs/services/service (2).png";
 import projectImg3 from "asset/imgs/services/service (3).png";
 import CircleBtn from "./CircleBtn";
 import { Element } from "react-scroll";
+import Splitting from "splitting";
 function Projects() {
   const [Show, setShow] = useState(null);
 
@@ -52,6 +53,11 @@ function Projects() {
       img: projectImg3,
     },
   ];
+  const myRef = useRef();
+
+  useEffect(() => {
+    Splitting({ target: myRef.current });
+  }, []);
   return (
     <Element name="Portfolio" className="my-5 py-5 position-relative">
       <h3
@@ -59,8 +65,10 @@ function Projects() {
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
       >
-        Some of our selected <br />
-        <span className="text-primary">projects</span>
+        <div ref={myRef} data-splitting="words">
+          Some of our selected <br />
+          <span className="text-primary">projects</span>
+        </div>
       </h3>
       <div className="px-5 mx-5 py-5">
         <Row>
@@ -127,13 +135,8 @@ function Projects() {
           </svg>
         </Button>
       </div>
-      <div
-        className="circleServices"
-        data-aos="fade-right"
-        data-aos-delay="400"
-        data-aos-anchor-placement="top-center"
-      ></div>
-      <div className="circleServices2"></div>
+      <div className="circleServices"></div>
+      <div className="circleServices2 "></div>
     </Element>
   );
 }
