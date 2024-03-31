@@ -38,13 +38,7 @@ function Home() {
           md="7"
           className="d-flex align-items-center justify-content-center"
         >
-          <img
-            src={HroImg}
-            data-aos="fade-left"
-            data-aos-anchor-placement="top-center"
-            alt=""
-            className="w-100"
-          />
+          <img src={HroImg} data-aos="fade-left" alt="" className="w-100" />
         </Col>
       </Row>
       <div
