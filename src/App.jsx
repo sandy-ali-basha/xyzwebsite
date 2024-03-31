@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import "./App.scss";
 import Home from "./pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // * api
 import { useSnackbar } from "notistack";
 import { HttpResponseInterceptor } from "./interceptor/http-response.interceptor";
@@ -12,6 +13,9 @@ import { Helmet } from "react-helmet";
 import Layout from "./layout/Layout";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   <Helmet>
     <title>miro</title>
     <meta name="description" content="jewllery" />

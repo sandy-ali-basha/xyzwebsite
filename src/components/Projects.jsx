@@ -53,7 +53,7 @@ function Projects() {
   ];
   return (
     <div className="my-5 py-5 position-relative">
-      <h3 className="text-center fs-1 fw-bold mx-auto mt-5">
+      <h3 className="text-center fs-1 fw-bold mx-auto mt-5" data-aos="fade-up">
         Some of our selected <br />
         <span className="text-primary">projects</span>
       </h3>
@@ -62,7 +62,11 @@ function Projects() {
           {content.map((item, index) => {
             return (
               <Col md="4" key={index}>
-                <div className="ServiceImg">
+                <div
+                  className="ServiceImg"
+                  data-aos="flip-up"
+                  data-aos-delay={index * 100}
+                >
                   <div
                     className={`link ${Show === index ? "showService" : ""}`}
                     onMouseEnter={() => setShow(index)}
@@ -86,7 +90,11 @@ function Projects() {
         </Row>
       </div>
       <div className="text-center">
-        <Button color="primary" className="my-5 text-white">
+        <Button
+          color="primary"
+          className="my-5 text-white"
+          data-aos="zoom-in-down"
+        >
           View all portfolio{" "}
           <svg
             width="25"
@@ -112,7 +120,11 @@ function Projects() {
           </svg>
         </Button>
       </div>
-      <div className="circleServices"></div>
+      <div
+        className="circleServices"
+        data-aos="fade-right"
+        data-aos-delay="400"
+      ></div>
       <div className="circleServices2"></div>
     </div>
   );

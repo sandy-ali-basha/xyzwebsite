@@ -11,28 +11,35 @@ function Services() {
   return (
     <div className="px-5">
       <Row className="align-items-center py-5 ">
-        <Col md="3">
+        <Col md="3" data-aos="fade-right">
           <img src={ServicesImg} alt="" />
         </Col>
         <Col md="4">
-          <h2 className="fs-large fw-bold">
+          <h2 className="fs-large fw-bold " data-aos="fade-in">
             Our Services designed to <span className="text-primary">grow</span>
             your business.
           </h2>
         </Col>
-        <Col className="text-muted">
+        <Col className="text-muted" data-aos="in-left">
           Bootstrap code with a well-organized Figma file to design & develop
           your next websites in minutes.
         </Col>
       </Row>
       <Row className="align-items-stretch ">
         <Col>
-          <div className="bgWhite box h-100">
+          <div className="bgWhite box h-100" data-aos="fade-in">
             <div className="title">
-              <img src={penIcon} alt="" />
-              <h3>Mobile App</h3>
+              <img
+                src={penIcon}
+                alt=""
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              />
+              <h3 data-aos="fade-left" data-aos-delay="400">
+                Mobile App
+              </h3>
             </div>
-            <p className="text-muted">
+            <p className="text-muted" data-aos="fade-in" data-aos-delay="500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consectetur, aliquid itaque perspiciatis animi eum maxime.
               Accusantium incidunt ipsum officiis soluta.
@@ -41,12 +48,14 @@ function Services() {
           </div>
         </Col>
         <Col>
-          <div className="bgWhite box h-100">
+          <div className="bgWhite box h-100" data-aos="fade-in">
             <div className="title">
-              <img src={globe} alt="" />
-              <h3>UI/UX</h3>
+              <img src={globe} alt="" data-aos="zoom-in" data-aos-delay="300" />
+              <h3 data-aos="fade-left" data-aos-delay="400">
+                UI/UX
+              </h3>
             </div>
-            <p className="text-muted">
+            <p className="text-muted" data-aos="fade-in" data-aos-delay="500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consectetur, aliquid itaque perspiciatis animi eum maxime.
               Accusantium incidunt ipsum officiis soluta.
@@ -55,12 +64,19 @@ function Services() {
           </div>
         </Col>
         <Col>
-          <div className="bgWhite box h-100">
+          <div className="bgWhite box h-100" data-aos="fade-in">
             <div className="title">
-              <img src={squares} alt="" />
-              <h3>Mobile App</h3>
+              <img
+                src={squares}
+                alt=""
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              />
+              <h3 data-aos="fade-left" data-aos-delay="400">
+                Mobile App
+              </h3>
             </div>
-            <p className="text-muted">
+            <p className="text-muted" data-aos="fade-in" data-aos-delay="500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consectetur, aliquid itaque perspiciatis animi eum maxime.
               Accusantium incidunt ipsum officiis soluta.

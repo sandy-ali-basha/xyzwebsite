@@ -21,7 +21,7 @@ import instagram from "asset/imgs/icons/instagram.svg";
 const Footer = () => {
   const { t } = useTranslation("footer");
   return (
-    <footer className=" footer bg_light_blue pt-5 pb-3 mt-5">
+    <footer className=" footer bg_light_blue pt-5 pb-3 mt-5" data-aos="fade-up">
       <Container>
         <Row className=" row-grid align-items-center mb-5">
           <Col lg="6">

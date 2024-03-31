@@ -12,21 +12,33 @@ import contactShape2 from "asset/imgs/contactImg2.png";
 export default function ContactUs() {
   return (
     <div className="my-5 py-5">
-      <h2 className="fs-1 fw-bold text-center">
+      <h2 className="fs-1 fw-bold text-center" data-aos="fade-up">
         Have a project in mind! <br />
         <span className="text-primary">Drop us</span> a line.
       </h2>
-      <p className="text-muted text-center w-75 mb-5 mx-auto">
+      <p
+        className="text-muted text-center w-75 mb-5 mx-auto"
+        data-aos="fade-in"
+      >
         Got a project? Drop us a line if you want to work together on something
         exciting. Or do you need our help? Feel free to contact us.
       </p>
       <div className="ContactForm mt-5">
-        <Row className="w-75 my-5 mx-auto bgWhite">
+        <Row
+          className="w-75 my-5 mx-auto bgWhite"
+          data-aos="fade-in"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <Col className="px-4 py-5">
             <h3 className="fs-4">Get In Touch</h3>
             <div className="contact_info">
               <div className="d-flex mt-4">
-                <img src={Email} alt="" />
+                <img
+                  src={Email}
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                />
                 <div>
                   <div className="text-muted fs-6">Email us</div>
                   <a
@@ -40,7 +52,12 @@ export default function ContactUs() {
                 </div>
               </div>
               <div className="d-flex mt-4">
-                <img src={phone} alt="" />
+                <img
+                  src={phone}
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                />
                 <div>
                   <div className="text-muted fs-6 fw-light">Phone Number</div>
                   <a
@@ -54,7 +71,12 @@ export default function ContactUs() {
                 </div>
               </div>
               <div className="d-flex mt-4">
-                <img src={location} alt="" />
+                <img
+                  src={location}
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                />
                 <div>
                   <div className="text-muted fs-6 fw-light">
                     901 N Pitt Str., Suite 170
@@ -71,12 +93,18 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="contact_social mt-3">
-              <h4 className="d-flex align-items-center gap-2 fw-light mt-5">
+              <h4
+                className="d-flex align-items-center gap-2 fw-light mt-5"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
                 <div className="prev"></div>
                 <div className="fs-6 ">Connect with us:</div>
               </h4>
               <div className="social_icons d-flex">
                 <a
+                  data-aos="fade-up"
+                  data-aos-delay="400"
                   className="img"
                   href="https://www.instagram.com/xyzdevteam"
                   target="_blank"
@@ -86,6 +114,8 @@ export default function ContactUs() {
                 </a>
                 <a
                   className="img"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
                   href="https://www.instagram.com/xyzdevteam"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -93,7 +123,7 @@ export default function ContactUs() {
                   <img className="w-100" src={insta} alt="" />
                 </a>
 
-                <div className="img">
+                <div className="img" data-aos="fade-up" data-aos-delay="400">
                   <img className="w-100" src={linkedin} alt="" />
                 </div>
               </div>
@@ -149,11 +179,15 @@ export default function ContactUs() {
           className="contactShape contactShape1"
           src={contactShape2}
           alt=""
+          data-aos="zoom-in"
+          data-aos-delay="500"
         />
         <img
           className="contactShape contactShape2"
           src={contactShape1}
           alt=""
+          data-aos="zoom-in"
+          data-aos-delay="500"
         />
       </div>
     </div>

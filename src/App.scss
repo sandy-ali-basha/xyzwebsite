@@ -88,8 +88,6 @@ section {
   z-index: -1;
 }
 .blured_cicle {
-  /* Background */
-
   position: absolute;
   width: 650px;
   height: 650px;
@@ -97,6 +95,16 @@ section {
   top: -231px;
 
   background: rgba(248, 121, 71, 0.158);
+  filter: blur(162px);
+  z-index: -1;
+}
+.bluredCircle {
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  left: -57px;
+  top: -231px;
+  background: rgba(46, 196, 182, 0.31);
   filter: blur(162px);
   z-index: -1;
 }
@@ -280,5 +288,24 @@ section {
     &:hover {
       color: $text;
     }
+  }
+}
+
+.floatOnHover {
+  &:hover {
+    animation: FloatOnHover 0.5s forwards cubic-bezier(1, 0.73, 0.52, 0.72);
+    transition: all 1s;
+  }
+  transition: all 1s;
+}
+@keyframes FloatOnHover {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-30px) scale(1.02);
   }
 }
