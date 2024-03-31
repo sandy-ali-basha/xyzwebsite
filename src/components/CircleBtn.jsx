@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CircleBtn() {
   return (
-    <button className="Circled-btn">
+    <a href="tel:+2080749941" className="Circled-btn">
       <svg
         width="120"
         height="115"
@@ -25,6 +25,6 @@ export default function CircleBtn() {
           stroke-linejoin="round"
         />
       </svg>
-    </button>
+    </a>
   );
 }

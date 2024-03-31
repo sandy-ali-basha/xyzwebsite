@@ -4,6 +4,7 @@ import projectImg1 from "asset/imgs/services/service (1).png";
 import projectImg2 from "asset/imgs/services/service (2).png";
 import projectImg3 from "asset/imgs/services/service (3).png";
 import CircleBtn from "./CircleBtn";
+import { Element } from "react-scroll";
 function Projects() {
   const [Show, setShow] = useState(null);
 
@@ -52,7 +53,7 @@ function Projects() {
     },
   ];
   return (
-    <div className="my-5 py-5 position-relative">
+    <Element name="Portfolio" className="my-5 py-5 position-relative">
       <h3
         className="text-center fs-1 fw-bold mx-auto mt-5"
         data-aos="fade-up"
@@ -133,7 +134,7 @@ function Projects() {
         data-aos-anchor-placement="top-center"
       ></div>
       <div className="circleServices2"></div>
-    </div>
+    </Element>
   );
 }
 

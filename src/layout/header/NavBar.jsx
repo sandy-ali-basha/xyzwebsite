@@ -8,11 +8,7 @@ import {
   Nav,
   NavItem,
   NavbarText,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavLink,
-  UncontrolledDropdown,
   Button,
 } from "reactstrap";
 
@@ -22,6 +18,8 @@ import { useTranslation } from "react-i18next";
 
 import { settingsStore } from "store/settingsStore";
 import logo from "asset/imgs/logo.svg";
+import { Link } from "react-scroll";
+
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -49,23 +47,55 @@ function NavBar() {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
+          <Nav className="mx-auto" navbar>
             <NavItem>
-              <NavLink href="/components/"></NavLink>
+              <Link
+                className="mx-2 text-muted"
+                activeClass="active"
+                to="services"
+                // spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Services
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="">Portfolio</NavLink>
+              <Link
+                className="mx-2 text-muted"
+                activeClass="active"
+                to="Portfolio"
+                // spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Portfolio
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="">Services</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="">Testimonnial</NavLink>
+              <Link
+                className="mx-2 text-muted"
+                activeClass="active"
+                to="aboutus"
+                // spy={true}
+                smooth={true}
+                duration={500}
+              >
+                About Us
+              </Link>
             </NavItem>
           </Nav>
           <NavbarText>
             <Button color="primary" className="text-white">
-              Contact Us
+              <Link
+                className="mx-2 text-white"
+                activeClass="active"
+                to="contactUs"
+                smooth={true}
+                duration={500}
+              >
+                Contact Us
+              </Link>
             </Button>
           </NavbarText>
         </Collapse>

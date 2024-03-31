@@ -1,9 +1,10 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
 import AboutUsImg from "asset/imgs/aboutUs.png";
+import { Element } from "react-scroll";
 export default function AboutUs() {
   return (
-    <section id="aboutUs" className="position-relative py-5 my-5 px-5">
+    <Element name="aboutus" className="position-relative py-5 my-5 px-5">
       <Row className="flex-column-reverse flex-md-row">
         <Col md="6">
           <img
@@ -48,6 +49,6 @@ export default function AboutUs() {
       </Row>
       <div className="cicleAboutUs"></div>
       <div className="cicleAboutUs2"></div>
-    </section>
+    </Element>
   );
 }

@@ -30,9 +30,12 @@ function Home() {
             solutions. Our team of experienced developers is dedicated to
             helping businesses thrive in the digital age.
           </p>
-          <Button className=" bg-orange border-0 text-white">
+          <a
+            href="mailto:ferasshaher@gmail.com"
+            className=" bg-orange border-0 text-white btn text-white"
+          >
             Request a Quote
-          </Button>
+          </a>
         </Col>
         <Col
           md="7"

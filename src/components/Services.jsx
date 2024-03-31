@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
-
+import { Element } from "react-scroll";
 import ServicesImg from "asset/imgs/servicesImg.png";
 import squares from "asset/imgs/icons/squares.svg";
 import penIcon from "asset/imgs/icons/pin.svg";
@@ -9,7 +9,7 @@ import CircleBtn from "./CircleBtn";
 
 function Services() {
   return (
-    <div className="px-5">
+    <Element className="px-5" name="services">
       <Row className="align-items-center py-5 ">
         <Col
           md="3"
@@ -33,8 +33,8 @@ function Services() {
           data-aos="in-left"
           data-aos-anchor-placement="top-center"
         >
-          Bootstrap code with a well-organized Figma file to design & develop
-          your next websites in minutes.
+          Our team is skilled in delivering custom solutions that ensure optimal
+          user experience and functionality.
         </Col>
       </Row>
       <Row className="align-items-stretch ">
@@ -56,13 +56,17 @@ function Services() {
                 data-aos-delay="400"
                 data-aos-anchor-placement="top-center"
               >
-                Mobile App
+                Web Applications
               </h3>
             </div>
-            <p className="text-muted" data-aos="fade-in" data-aos-delay="500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur, aliquid itaque perspiciatis animi eum maxime.
-              Accusantium incidunt ipsum officiis soluta.
+            <p
+              className="text-muted fs-6"
+              data-aos="fade-in"
+              data-aos-delay="500"
+            >
+              Leverage our expertise in creating high-performance web
+              applications. We use the latest technologies to transform your
+              ideas into efficient, scalable solutions.
             </p>
             <CircleBtn />
           </div>
@@ -78,13 +82,18 @@ function Services() {
                 data-aos-anchor-placement="top-center"
               />
               <h3 data-aos="fade-left" data-aos-delay="400">
-                UI/UX
+                Mobile Apps
               </h3>
             </div>
-            <p className="text-muted" data-aos="fade-in" data-aos-delay="500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur, aliquid itaque perspiciatis animi eum maxime.
-              Accusantium incidunt ipsum officiis soluta.
+            <p
+              className="text-muted fs-6"
+              data-aos="fade-in"
+              data-aos-delay="500"
+            >
+              Embrace the mobile-first world with our innovative mobile app
+              solutions. We design and develop intuitive, user-friendly apps.
+              Stay connected with your audience anytime, anywhere with our
+              engaging mobile apps.
             </p>
             <CircleBtn />
           </div>
@@ -99,19 +108,24 @@ function Services() {
                 data-aos-delay="300"
               />
               <h3 data-aos="fade-left" data-aos-delay="400">
-                Mobile App
+                Websites
               </h3>
             </div>
-            <p className="text-muted" data-aos="fade-in" data-aos-delay="500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur, aliquid itaque perspiciatis animi eum maxime.
-              Accusantium incidunt ipsum officiis soluta.
+            <p
+              className="text-muted fs-6"
+              data-aos="fade-in"
+              data-aos-delay="500"
+            >
+              Get a visually appealing, responsive, and SEO-optimized website
+              tailored to your business needs. Our expertise in modern design
+              principles and technologies ensures your website not only looks
+              good but also drives results.
             </p>
             <CircleBtn />
           </div>
         </Col>
       </Row>
-    </div>
+    </Element>
   );
 }
 

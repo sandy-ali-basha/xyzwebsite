@@ -9,9 +9,10 @@ import linkedin from "asset/imgs/icons/linkedin.svg";
 
 import contactShape1 from "asset/imgs/contactImg.png";
 import contactShape2 from "asset/imgs/contactImg2.png";
+import { Element } from "react-scroll";
 export default function ContactUs() {
   return (
-    <div className="my-5 py-5">
+    <Element name="contactUs" className="my-5 py-5">
       <h2
         className="fs-1 fw-bold text-center"
         data-aos="fade-up"
@@ -43,7 +44,6 @@ export default function ContactUs() {
                   alt=""
                   data-aos="fade-right"
                   data-aos-delay="200"
-                  data-aos-anchor-placement="top-center"
                 />
                 <div>
                   <div className="text-muted fs-6">Email us</div>
@@ -63,7 +63,6 @@ export default function ContactUs() {
                   alt=""
                   data-aos="fade-right"
                   data-aos-delay="200"
-                  data-aos-anchor-placement="top-center"
                 />
                 <div>
                   <div className="text-muted fs-6 fw-light">Phone Number</div>
@@ -83,7 +82,6 @@ export default function ContactUs() {
                   alt=""
                   data-aos="fade-right"
                   data-aos-delay="200"
-                  data-aos-anchor-placement="top-center"
                 />
 
                 <div>
@@ -106,7 +104,6 @@ export default function ContactUs() {
                 className="d-flex align-items-center gap-2 fw-light mt-5"
                 data-aos="fade-right"
                 data-aos-delay="200"
-                data-aos-anchor-placement="top-center"
               >
                 <div className="prev"></div>
                 <div className="fs-6 ">Connect with us:</div>
@@ -119,7 +116,6 @@ export default function ContactUs() {
                   href="https://www.instagram.com/xyzdevteam"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-aos-anchor-placement="top-center"
                 >
                   <img className="w-100" src={facebook} alt="" />
                 </a>
@@ -130,17 +126,11 @@ export default function ContactUs() {
                   href="https://www.instagram.com/xyzdevteam"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-aos-anchor-placement="top-center"
                 >
                   <img className="w-100" src={insta} alt="" />
                 </a>
 
-                <div
-                  className="img"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  data-aos-anchor-placement="top-center"
-                >
+                <div className="img" data-aos="fade-up" data-aos-delay="400">
                   <img className="w-100" src={linkedin} alt="" />
                 </div>
               </div>
@@ -197,7 +187,6 @@ export default function ContactUs() {
           src={contactShape2}
           alt=""
           data-aos="zoom-in"
-          data-aos-anchor-placement="top-center"
           data-aos-delay="500"
         />
         <img
@@ -206,9 +195,8 @@ export default function ContactUs() {
           alt=""
           data-aos="zoom-in"
           data-aos-delay="500"
-          data-aos-anchor-placement="top-center"
         />
       </div>
-    </div>
+    </Element>
   );
 }

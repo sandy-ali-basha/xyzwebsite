@@ -33,10 +33,8 @@ function GetQuote() {
             <Input className="border-0" placeholder="email Address" />
             <InputGroupText addonType="append" className="bg-primary rounded ">
               <a
-                href="http://"
+                href="mailto:ferasshaher@gmail.com?subject=quote for xyz project"
                 className="text-white"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Get a Quote
               </a>
