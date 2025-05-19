@@ -1,11 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import {
   Button,
   Col,
   Container,
-  InputGroup,
   Nav,
   NavItem,
   NavLink,
@@ -19,7 +17,6 @@ import instagram from "asset/imgs/icons/instagram.svg";
 //* images
 
 const Footer = () => {
-  const { t } = useTranslation("footer");
   return (
     <footer className=" footer bg_light_blue pt-5 pb-3 mt-5" data-aos="fade-up">
       <Container>
