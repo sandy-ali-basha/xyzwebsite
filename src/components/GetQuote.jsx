@@ -23,9 +23,8 @@ function GetQuote() {
           </div>
         </h2>
         <p data-aos="fade-in" data-aos-delay="200">
-          Nam tincidunt condimentum arcu, rhoncus interdum eros vulputate ut.
-          Maecenas molestie sodales tristique. Nunc scelerisque tortor vitae
-          ipsum rhoncus auctor.{" "}
+          Let’s begin this exciting journey together! We’ll provide you with a
+          personalized estimate and discuss how we can bring your ideas to life.{" "}
         </p>
         <div
           className="bgWhite p-2 rounded-4 shadow"

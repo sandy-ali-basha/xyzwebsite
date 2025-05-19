@@ -6,7 +6,6 @@ import GetQuote from "components/GetQuote";
 import Projects from "components/Projects";
 import AboutUs from "components/AboutUs";
 import ContactUs from "components/ContactUs";
-
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,6 +18,7 @@ function Home() {
           md="5"
           className="d-flex justify-content-center align-items-start flex-column"
         >
+      
           <div className="rounded pill bg-light_orange px-2 rounded-3 mb-2 text-white floatOnHover">
             HI THERE
           </div>

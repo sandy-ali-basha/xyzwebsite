@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Col, Input, div, Label, Row, Button } from "reactstrap";
+import { Col, Input, Label, Row, Button } from "reactstrap";
 import Email from "asset/imgs/icons/email.svg";
 import phone from "asset/imgs/icons/phone.svg";
 import location from "asset/imgs/icons/location.png";
@@ -17,6 +17,7 @@ export default function ContactUs() {
   useEffect(() => {
     Splitting({ target: myRef.current });
   }, []);
+
   return (
     <Element name="contactUs" className="my-5 py-5">
       <h2
@@ -57,11 +58,9 @@ export default function ContactUs() {
                   <div className="text-muted fs-6">Email us</div>
                   <a
                     className="text-black fs-6 fw-light"
-                    href="http://info@golio.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:ferasshaher@gmail.com"
                   >
-                    info@golio.com
+                    ferasshaher@gmail.com
                   </a>
                 </div>
               </div>
@@ -76,11 +75,11 @@ export default function ContactUs() {
                   <div className="text-muted fs-6 fw-light">Phone Number</div>
                   <a
                     className="text-black fs-6"
-                    href="http://info@golio.com"
+                    href="tel:+201124812216"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    +20 10 80 74 99 41
+                    +20 112 481 2216
                   </a>
                 </div>
               </div>
@@ -93,16 +92,14 @@ export default function ContactUs() {
                 />
 
                 <div>
-                  <div className="text-muted fs-6 fw-light">
-                    901 N Pitt Str., Suite 170
-                  </div>
+                  <div className="text-muted fs-6 fw-light">Our Location</div>
                   <a
                     className="text-black fs-6"
                     href="http://info@golio.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    901 N Pitt Str., Suite 170 Alexandria, VA 22314, USA
+                    6th Of October, Giza, Egypt
                   </a>
                 </div>
               </div>
@@ -121,7 +118,7 @@ export default function ContactUs() {
                   data-aos="fade-up"
                   data-aos-delay="400"
                   className="img"
-                  href="https://www.instagram.com/xyzdevteam"
+                  href="https://www.facebook.com/xyz.web.full"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -138,9 +135,16 @@ export default function ContactUs() {
                   <img className="w-100" src={insta} alt="" />
                 </a>
 
-                <div className="img" data-aos="fade-up" data-aos-delay="400">
+                <a
+                  href="https://www.linkedin.com/company/xyzdevteam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="img"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
                   <img className="w-100" src={linkedin} alt="" />
-                </div>
+                </a>
               </div>
             </div>
           </Col>
