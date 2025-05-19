@@ -93,14 +93,9 @@ export default function ContactUs() {
 
                 <div>
                   <div className="text-muted fs-6 fw-light">Our Location</div>
-                  <a
-                    className="text-black fs-6"
-                    href="http://info@golio.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                <p>
                     6th Of October, Giza, Egypt
-                  </a>
+                </p>
                 </div>
               </div>
             </div>
@@ -118,7 +113,7 @@ export default function ContactUs() {
                   data-aos="fade-up"
                   data-aos-delay="400"
                   className="img"
-                  href="https://www.facebook.com/xyz.web.full"
+                  href="https://www.facebook.com/xyz.devs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

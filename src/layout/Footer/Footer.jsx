@@ -36,7 +36,7 @@ const Footer = () => {
             <Button
               className="btn-icon-only rounded-circle"
               color="twitter"
-              href="https://twitter.com/creativetim"
+              href="https://www.linkedin.com/company/102342191/admin/page-posts/published/s"
               id="tooltip475038074"
               target="_blank"
             >
@@ -48,7 +48,7 @@ const Footer = () => {
             <Button
               className="btn-icon-only rounded-circle ml-1"
               color="facebook"
-              href="https://www.facebook.com/creativetim"
+              href="https://www.facebook.com/xyzdevs/"
               id="tooltip837440414"
               target="_blank"
             >
@@ -60,7 +60,7 @@ const Footer = () => {
             <Button
               className="btn-icon-only rounded-circle ml-1"
               color="dribbble"
-              href="https://dribbble.com/creativetim"
+              href="https://www.instagram.com/xyzdevteam"
               id="tooltip829810202"
               target="_blank"
             >
@@ -90,9 +90,9 @@ const Footer = () => {
           <Col md="6">
             <div className=" copyright">
               © {new Date().getFullYear()}{" "}
-              <a href="" target="_blank">
+              <p>
                 XYZ Team
-              </a>
+              </p>
               .
             </div>
           </Col>
